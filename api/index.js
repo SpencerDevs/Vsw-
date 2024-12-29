@@ -14,6 +14,7 @@ app.get("/vrf/:id", async (req, res) => {
     id: id,
     vrf: data,
     timestamp: new Date().toISOString(),
+    link: 'https://vidsrc.cc/api/'+id+'/servers?id='+id+'&type=movie&vrf='+data,
   });
 });
 
