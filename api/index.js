@@ -7,7 +7,7 @@ app.get("/", (_, res) => {
   res.send("Hello Coders! use `/vrf/:id`");
 });
 
-app.get("/vrf/:id", async (req, res) => {
+app.get("/vrf/movie/:id", async (req, res) => {
   const id = req.params.id;
   var data = await main(id);
   return res.json({
