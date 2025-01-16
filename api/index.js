@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { main } from "./main";
+import { main } from "./main.js";
 const app = express(cors());
 
 app.get("/", (_, res) => {
